@@ -1,6 +1,16 @@
 server:
   port: "0"
 
+resilience4j:
+  circuitbreaker:
+    instances:
+      restauranteCircuitBreaker:
+        minimumNumberOfCalls: '4'
+        slidingWindowSize: '8'
+      usuarioCircuitBreaker:
+        slidingWindowSize: '8'
+        minimumNumberOfCalls: '4'
+
 eureka:
   client:
     serviceUrl:
