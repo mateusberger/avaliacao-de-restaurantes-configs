@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    config:
+      allow-override: true
+      override-none: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  security:
+    enabled: "false"
+
+springdoc:
+  swagger-ui:
+    path: /
