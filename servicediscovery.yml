@@ -1,4 +1,6 @@
 eureka:
+  instance:
+    hostname: servicediscovery
   client:
     fetch-registry: "false"
     register-with-eureka: "false"
